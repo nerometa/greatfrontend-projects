@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 type TestimonialCardProps = {
   description: string;
   name: string;
