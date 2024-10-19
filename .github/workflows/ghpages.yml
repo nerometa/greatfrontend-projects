@@ -26,6 +26,8 @@ jobs:
             cd "$dir"
             pnpm install
             pnpm run build
+            mkdir -p ../public/$dir
+            cp -r dist/* ../public/$dir/
             cd ..
           fi
         done
