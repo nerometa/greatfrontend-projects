@@ -20,7 +20,7 @@ function TestimonialCard({
         <div className="flex items-center gap-4">
           <img
             loading="lazy"
-            src={`src/assets/${image}`}
+            src={image}
             alt={`${name} profile image`}
             className="size-12"
           />
