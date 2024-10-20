@@ -35,47 +35,31 @@ jobs:
         with:
           version: 9
           run_install: false
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'pnpm'
       - name: Build and deploy each project
         run: |
           # List all directories
           for dir in $(ls -d */); do
-            echo "Building and deploying $dir"
-            
-            # Enter the directory
-            cd $dir
-            
-            # Install dependencies and build the project
-            pnpm install
-            pnpm run build
-            
-            # Move the build output to a temp directory to prepare for deployment
-            mv dist "../${dir%/}-dist"
-            
-            # Go back to the root directory
-            cd ..
+            if [ -f "${dir}package.json" ]; then
+              echo "Building and deploying $dir"
+              
+              # Enter the directory
+              cd $dir
+              
+              # Install dependencies and build the project
+              pnpm install
+              pnpm build
+              
+              # Move the build output to the public folder for deployment
+              mkdir -p ../public/$dir
+              cp -r dist/* ../public/$dir/
+              cd ..
+            fi
           done
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload built artifacts
-        run: |
-          # Upload all the build outputs from each directory
-          for dir in $(ls -d */); do
-            dir_dist="${dir%/}-dist"
-            echo "Uploading $dir_dist"
-            
-            # Check if the dist folder exists before attempting upload
-            if [ -d "$dir_dist" ]; then
-              actions/upload-pages-artifact@v3 --path "./$dir_dist"
-            else
-              echo "$dir_dist does not exist, skipping..."
-            fi
-          done
+        uses: actions/upload-pages-artifact@v3
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
