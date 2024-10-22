@@ -8,3 +8,5 @@ Collections of projects through the GreatFrontEnd Projects platfrom by your homi
 ## Projects
 
 [Testimonial Card](https://github.com/nerometa/greatfrontend-projects/tree/main/testimonial-card) ([Live Site](https://nerometa.github.io/greatfrontend-projects/testimonial-card))
+[Blog Card](https://github.com/nerometa/greatfrontend-projects/tree/main/blog-card)
+([Live Site](https://nerometa.github.io/greatfrontend-projects/blog-card))
