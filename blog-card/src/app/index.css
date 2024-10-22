@@ -4,11 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-br from-[#f9fafb] to-[#d2d6db] min-h-screen w-full m-0 antialiased rendering-legibility;
+    @apply bg-gradient-to-br from-[#f9fafb] to-[#d2d6db] bg-no-repeat min-h-screen w-full m-0 antialiased rendering-legibility;
   }
 
   #root {
-    @apply py-[120px];
+    @apply pt-[120px];
   }
 }
 
