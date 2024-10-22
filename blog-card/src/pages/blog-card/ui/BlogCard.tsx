@@ -14,10 +14,10 @@ export function BlogCard({
         decoding="async"
         fetchPriority="high"
         src={image}
-        className="w-full h-[288px] object-cover"
+        className="w-full h-72 object-cover"
         alt={imageAlt}
       />
-      <section className="min-h-[216px] py-6 px-4 space-y-3 ">
+      <section className="py-6 px-4 space-y-3 ">
         <div className="space-y-2">
           <span
             aria-label="badge"
@@ -29,7 +29,9 @@ export function BlogCard({
         </div>
 
         <div className="space-y-6">
-          <p className="text-neutral-600 font-medium">{description}</p>
+          <p className="text-neutral-600 font-medium line-clamp-2">
+            {description}
+          </p>
           <a
             href={url}
             role="button"
