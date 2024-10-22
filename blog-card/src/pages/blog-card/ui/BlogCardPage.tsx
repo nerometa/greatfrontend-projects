@@ -14,7 +14,7 @@ export function BlogCardPage() {
   };
 
   return (
-    <div className="relative h-screen flex justify-center my-[120px]">
+    <div className="relative h-screen flex justify-center">
       <BlogCard {...blogCardData} />
       <Credits />
     </div>

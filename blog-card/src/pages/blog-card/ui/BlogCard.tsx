@@ -8,7 +8,7 @@ export function BlogCard({
   imageAlt = `${title} thumbnail`,
 }: BlogCardProps) {
   return (
-    <article className="w-[340px] max-h-min rounded-lg overflow-hidden shadow bg-white">
+    <article className="w-[340px] h-max rounded-lg overflow-hidden shadow bg-white">
       <img
         loading="lazy"
         decoding="async"
