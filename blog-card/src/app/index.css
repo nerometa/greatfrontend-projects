@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-[#f9fafb] to-[#d2d6db] min-h-screen w-full m-0 antialiased rendering-legibility;
+  }
+}
+
+@layer utilities {
+  .rendering-legibility {
+    text-rendering: optimizeLegibility;
+  }
+}
