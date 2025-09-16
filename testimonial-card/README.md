@@ -11,4 +11,4 @@ Testimonial Card is the first project out of 25 from GreatFrontEnd Projects' [Ma
 [![Tech Stack](https://skillicons.dev/icons?i=react,ts,tailwind,vite&theme=dark)](https://skillicons.dev)
 
 [Back to the collections](https://github.com/nerometa/greatfrontend-projects)
--> Next Project (This is a link to the next project on the track. Coming out soon.)
+[Next Project > Blog Card](https://github.com/nerometa/greatfrontend-projects/tree/main/blog-card)

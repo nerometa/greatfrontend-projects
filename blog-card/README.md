@@ -15,4 +15,4 @@ I also tried [Feature-Sliced Design](https://feature-sliced.design/) on this pro
 [![Tech Stack](https://skillicons.dev/icons?i=react,ts,tailwind,vite&theme=dark)](https://skillicons.dev)
 
 [Back to the collections](https://github.com/nerometa/greatfrontend-projects)
--> Next Project (This is a link to the next project on the track. Coming out soon.)
+[Next Project > Profile Card](https://github.com/nerometa/greatfrontend-projects/tree/main/profile-card)
