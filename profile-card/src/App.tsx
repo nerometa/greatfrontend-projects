@@ -1,4 +1,5 @@
 import "./App.css";
+import profileThumbnail from "../public/profile-thumbnail.png";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
           <section className="flex flex-col items-center gap-6 self-stretch text-center">
             <div className="w-16 h-16">
               <img
-                src="/public/profile-thumbnail.png"
+                src={profileThumbnail}
                 className="w-16 h-16 object-cover"
               ></img>
             </div>
